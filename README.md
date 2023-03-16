@@ -5,7 +5,7 @@ A modern and efficient web application for managing your daily tasks. Built with
 </p>
 
 <p align="center">
-  <img alt="License" src="./assets/screenshot.png">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=GPL-3&color=49AA26&labelColor=000000">
 </p>
 
 <br>
@@ -14,7 +14,9 @@ A modern and efficient web application for managing your daily tasks. Built with
 
   <h3 align='center'>Web</h3>
   <a href="https://todo-list-orcin-two.vercel.app/" target="_blank" >
-   <img alt="Preview Screenshot of todo-list-orcin-two.vercel.app" class="screenshot_image__fGVUW" src="blob:https://vercel.com/a5d6449c-0b37-45d5-b13d-b83a8fcafcc7">
+   <img alt="Preview Screenshot of todo-list-orcin-two.vercel.app" class="screenshot_image__fGVUW" src=".github/preview_web.png"
+   width="100%"
+   >
   </a>
 
 </p>
