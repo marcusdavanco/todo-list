@@ -1,16 +1,11 @@
-import { useState } from "react";
+import { useAtom } from "jotai";
 import { EmptyList } from "./EmptyList";
 import { Header } from "./Header";
-import { Task, TaskType } from "./Task";
+import { Task } from "./Task";
+import { taskList } from "../../atoms/task";
 
 export function TaskList() {
-  const [tasks, setTasks] = useState<TaskType[]>([
-    { id: "1", text: "Walk the dog", isChecked: false },
-    { id: "2", text: "Buy groceries", isChecked: true },
-    { id: "3", text: "Do laundry", isChecked: false },
-    { id: "4", text: "Clean the house", isChecked: true },
-    { id: "5", text: "Pay bills", isChecked: false },
-  ]);
+  const [tasks, setTasks] = useAtom(taskList);
 
   function deleteTask(taskToDelete: string) {
     setTasks(tasks.filter((task) => task.id !== taskToDelete));
