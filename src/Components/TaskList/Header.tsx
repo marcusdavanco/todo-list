@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { TaskType } from "./Task";
 
 interface TaskHeaderProps {
@@ -5,12 +6,14 @@ interface TaskHeaderProps {
 }
 
 export function Header({ tasks }: TaskHeaderProps) {
-  const finishedTasks = tasks.reduce((acc, task) => {
-    if (task.isChecked) {
-      return acc + 1;
-    }
-    return acc;
-  }, 0);
+  const finishedTasks = useMemo(() => {
+    return tasks.reduce((acc, task) => {
+      if (task.isChecked) {
+        return acc + 1;
+      }
+      return acc;
+    }, 0);
+  }, [tasks]);
 
   return (
     <header className="flex w-[736px] justify-between mb-6 box h-[19px]">
