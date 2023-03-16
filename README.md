@@ -5,7 +5,7 @@ A modern and efficient web application for managing your daily tasks. Built with
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=GPL-3&color=49AA26&labelColor=000000">
+  <img alt="License" src="./assets/screenshot.png">
 </p>
 
 <br>
@@ -17,16 +17,15 @@ A modern and efficient web application for managing your daily tasks. Built with
    <img alt="Preview Screenshot of todo-list-orcin-two.vercel.app" class="screenshot_image__fGVUW" src="blob:https://vercel.com/a5d6449c-0b37-45d5-b13d-b83a8fcafcc7">
   </a>
 
-  
 </p>
 
 ## ✅ Status
 
- - Finished ✅
+- Finished ✅
 
 ## 👨🏼‍💻 Functions
 
- - Task List ( We don't have storage, sorry )
+- Task List ( We don't have storage, sorry )
 
 ## 🚀 Technologies
 
@@ -47,7 +46,7 @@ This project was developed to solve the first challenge of Ignite's React track
 
 ## 🔖 Layout
 
-- Access the project layout through [this link](https://www.figma.com/file/AMVmhNJA2eXP33dpvauLJ7/ToDo-List-(Copy)?node-id=12-106&t=9KyyrWM5n7SbpdLn-0). A [Figma](https://figma.com) account is required.
+- Access the project layout through [this link](<https://www.figma.com/file/AMVmhNJA2eXP33dpvauLJ7/ToDo-List-(Copy)?node-id=12-106&t=9KyyrWM5n7SbpdLn-0>). A [Figma](https://figma.com) account is required.
 
 ## :memo: License
 

@@ -7,12 +7,12 @@ export function Form() {
   const setTasks = useSetAtom(taskList);
   const [newTaskText, setNewTaskText] = useState<string>("");
 
-  const isNewTaskEmpty = !!newTaskText;
+  const isNewTaskEmpty = newTaskText.length === 0;
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
-    if (newTaskText) {
+    if (isNewTaskEmpty) {
       return;
     }
 
@@ -34,6 +34,7 @@ export function Form() {
 
   function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
     setNewTaskText(event.target.value);
+    console.log(newTaskText);
   }
 
   return (
@@ -50,8 +51,9 @@ export function Form() {
         onChange={handleNewTaskChange}
       ></input>
       <button
-        className="flex items-center gap-2 bg-blue-700 border-blue-700 p-4 text-gray-200 font-bold rounded-lg hover:bg-blue-500 transition duration-200"
+        className="flex items-center gap-2 bg-blue-700 border-blue-700 p-4 text-gray-200 font-bold rounded-lg hover:bg-blue-500 transition duration-200 disabled:opacity-70"
         disabled={isNewTaskEmpty}
+        type="submit"
       >
         Criar
         <PlusCircle weight="bold" />
